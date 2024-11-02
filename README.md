@@ -10,4 +10,4 @@ It is also possible to go the other way around to use SwiftUI only for a portion
 
 This example does not expand on those use cases. However, please let me know if you're interested and I'll add it to this repo and https://newsletter.mobileengineer.io/.
 
-A more expanded and detailed explanation of how this SwiftUI implementation in RIBs works can be found in the following article: https://newsletter.mobileengineer.io/.
+A more expanded and detailed explanation of how this SwiftUI implementation in RIBs works can be found in the following article: https://newsletter.mobileengineer.io/p/ribs-swiftui-uikit-navigation-with
