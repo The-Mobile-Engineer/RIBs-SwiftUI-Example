@@ -25,12 +25,12 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
         view.backgroundColor = .yellow
     }
     
-    func embedMainView(_ mainViewController: MainViewControllable) {
-        embed(childViewController: mainViewController.uiviewController)
+    func showMainView(_ mainViewController: MainViewControllable) {
+        present(mainViewController.uiviewController, animated: true)
     }
     
     func removeMainView(_ mainViewController: MainViewControllable) {
-        removeChildViewController(mainViewController.uiviewController)
+        mainViewController.uiviewController.dismiss(animated: true)
     }
     
     func embedLoginView(_ loginViewController: LoginViewControllable) {

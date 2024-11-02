@@ -13,7 +13,7 @@ protocol RootInteractable: Interactable, MainListener, LoginListener {
 }
 
 protocol RootViewControllable: ViewControllable {
-    func embedMainView(_ mainViewController: MainViewControllable)
+    func showMainView(_ mainViewController: MainViewControllable)
     func removeMainView(_ mainViewController: MainViewControllable)
     func embedLoginView(_ loginViewController: LoginViewControllable)
     func removeLoginView(_ loginViewController: LoginViewControllable)
@@ -40,7 +40,7 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         let mainRouter = mainBuilder.build(withListener: interactor)
         self.mainRouter = mainRouter
         let mainViewController = mainRouter.mainViewController
-        viewController.embedMainView(mainViewController)
+        viewController.showMainView(mainViewController)
         attachChild(mainRouter)
     }
     
